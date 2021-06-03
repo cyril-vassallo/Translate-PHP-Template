@@ -12,7 +12,7 @@ echo _('Goodby'); // This one is available too
 $ xgettext -n index.php
 ```
 
-You should get **message.po** file directly generated from your php file
+You should get **messages.po** file directly generated from your php file
 
 ## Edit and replace your .po file header with the followings
 
@@ -41,20 +41,20 @@ msgstr "Byebye"
 ## Generate the binary file from your .po file
 
 ```bash
-$ msgfmt message.po
+$ msgfmt messages.po
 ```
 
-You should get **message.mo** binary file directly generated from your .po file
+You should get **messages.mo** binary file directly generated from your .po file
 
 
 ## Create local folder and mouve your .po and .mo file into it
 
 ```bash
 $ mkdir local/fr_FR/LC_MESSAGES
+$ mv messages.po ./local/fr_FR/LC_MESSAGES/messages.po
+$ mv messages.mo ./local/fr_FR/LC_MESSAGES/messages.mo
 ```
-LC_MESSAGES
-- message.mo
-- message.po
+
 
 ## Add some php code at the top head of your translated .php template
 
