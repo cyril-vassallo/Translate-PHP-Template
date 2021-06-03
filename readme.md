@@ -77,3 +77,13 @@ congrats you can see displayed:
 Bonjour
 Byebye
 ```
+
+## source
+
+php.net
+Source exemple of this repository
+https://www.php.net/manual/fr/book.gettext.php
+
+poedit.net 
+client to translate .po file and generate to .mo binary
+https://poedit.net/
