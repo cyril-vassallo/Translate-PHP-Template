@@ -53,8 +53,8 @@ You should get **message.mo** binary file directly generated from your .po file
 $ mkdir local/fr_FR/LC_MESSAGES
 ```
 LC_MESSAGES
-    - message.mo
-    - message.po
+- message.mo
+- message.po
 
 ## Add some php code at the top head of your translated .php template
 
