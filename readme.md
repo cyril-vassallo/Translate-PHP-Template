@@ -53,7 +53,7 @@ You should get **message.mo** binary file directly generated from your .po file
 local/fr_FR/LC_MESSAGES
 ```
 
-## Add some php code at the top head of your target .php file
+## Add some php code at the top head of your translated .php template
 ```php
 $local = 'fr_FR';
 
