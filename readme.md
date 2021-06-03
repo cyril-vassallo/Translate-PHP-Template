@@ -16,14 +16,18 @@ You should get **message.po** file directly generated from your php file
 
 ## Edit and replace your .po file header with the followings
 
+```code
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+```
 
 ## Translate fields in the .po file
 
-msgid is the initial id 
-msgstr is the translation, if empty the id is not translated and keep the original value msgid 
+- msgid is the initial id 
+- msgstr is the translation, if empty the id is not translated and keep the original value msgid 
 
+
+```code
 #: index.php:17
 msgid "Hello" 
 msgstr "Bonjour" 
@@ -31,6 +35,7 @@ msgstr "Bonjour"
 #: index.php:19
 msgid "Goodby"
 msgstr "Byebye"
+```
 
 
 ## Generate the binary file from your .po file
