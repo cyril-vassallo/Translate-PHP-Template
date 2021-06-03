@@ -46,19 +46,34 @@ msgfmt message.po
 
 You should get **message.mo** binary file directly generated from your .po file
 
-## Add some php code at the top head of your target .php file
 
+## Create local folder and mouve your .po and .mo file into it
+
+```code
+local/fr_FR/LC_MESSAGES
+```
+
+## Add some php code at the top head of your target .php file
 ```php
-$locale = 'fr_FR';
+$local = 'fr_FR';
 
 if (defined('LC_MESSAGES')) {
-    setlocale(LC_MESSAGES, $locale); // Linux
+    setlocale(LC_MESSAGES, $local); // Linux
     bindtextdomain("messages", "./local");
 } else {
-    putenv("LC_ALL={$locale}"); // windows
+    putenv("LC_ALL={$local}"); // windows
     bindtextdomain("messages", ".\local");
 }
 
 
 textdomain("messages");
+```
+
+## Now refresh the template 
+
+congrats you can see displayed:
+
+```code
+Bonjour
+Byebye
 ```
